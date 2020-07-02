@@ -1,17 +1,16 @@
 var nodemailer = require('nodemailer');
 
 var transporter = nodemailer.createTransport({
-		host: 'smtp.ethereal.email',
-		port: 587,
-		auth: {
-			user: 'arnulfo58@ethereal.email',
-			pass: 'pat3hR6WZUvFC6Rc15'
-		}
-	});
-	
+  service: 'gmail',
+  auth: {
+    user: 'heavenhigh027@gmail.com',
+    pass: 'Concentrate2.2'
+  }
+});
+
 var mailOptions = {
-  from: 'obTb4ymi@gmail.com',
-  to: 'blue_cool_icy_mint@hotmail.com',
+  from: 'heavenhigh027@gmail.com',
+  to: 'obTb4ymi@gmail.com',
   subject: 'Sending Email using Node.js',
   text: 'That was easy!'
 };
